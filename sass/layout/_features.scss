@@ -1,0 +1,44 @@
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.features-decor-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.features-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.card {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.features-top {
+    padding-top: 94px;
+}
+
+.features {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.features-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
