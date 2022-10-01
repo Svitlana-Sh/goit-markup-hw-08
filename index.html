@@ -20,7 +20,7 @@
   <body>
     <!--header-->
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <a class="logo" href="./index.html">
           <span class="logo__part">Web</span>Studio
         </a>
@@ -37,6 +37,14 @@
             </li>
           </ul>
         </nav>
+        <button 
+           type="button" 
+           class="open-mobile-menu-btn"
+           data-menu-open>
+             <svg class="open-mobile-menu-btn__icon" aria-label="кнопка розкриваючогося меню">
+              <use href="./images/sprite.svg#icon-burger"></use>
+             </svg>
+        </button>
         <ul class="list contact-list">
           <li class="contact-list__item">
             <a class="contact-list__link link" href="mailto:info@devstudio.com">
@@ -56,11 +64,57 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close-cross"></use>
+            </svg>  
+          </button>   
+          <ul class="list mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="link mobile-menu__link" href="">Контакти</a>
+            </li>
+          </ul>
+         <ul class="list mobile-menu__address">
+          <li class="mobile-menu__address-item">
+            <a class="link mobile-menu__address-tell" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a class="link mobile-menu__address-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+         </ul>
+          <ul class="list mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+              <a class="link mobile-menu__social-list-link mob-social-link-first" href="">Instagram</a>
+            </li>
+            <li mobile-menu__social-item>
+              <a class="link mobile-menu__social-list-link mob-social-link" href="">Twitter</a>
+            </li>
+            <li mobile-menu__social-item>
+              <a class="link mobile-menu__social-list-link mob-social-link" href="">Facebook</a>
+            </li>
+            <li>
+              <a class="link mobile-menu__social-list-link mob-social-link" href="">LinkedIn</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
     </header>
     <!--main-->
     <main>
       <!--SECTION 1 - Замовити послугу-->
-      <section class="main-top">
+      <!-- <section class="main-top">
         <div class="container main-headline">
           <h1 class="headline">
             Ефективні рішення для <br />
@@ -68,9 +122,9 @@
           </h1>
           <button type="button" class="modal-open-btn" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> -->
       <!--SECTION 2 - Особливості-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list features-list">
@@ -85,8 +139,8 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
-            </li>
-            <li class="card">
+            </li> -->
+            <!-- <li class="card">
               <div class="features-decor">
                 <svg aria-label="іконка годинник" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -103,8 +157,8 @@
                 <svg aria-label="іконка діаграма" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
-              </div>
-              <h3 class="features">Планування</h3>
+              </div> -->
+              <!-- <h3 class="features">Планування</h3>
               <p class="features-description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -123,9 +177,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION 3 - Чим ми займаємося-->
-      <section class="about section">
+      <!-- <section class="about section">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list working-list">
@@ -136,8 +190,8 @@
                 width="370"
               />
               <p class="about-overlay">Десктопні додатки</p>
-            </li>
-            <li class="working-img">
+            </li> -->
+            <!-- <li class="working-img">
                 <img
                 src="./images/box2.jpg"
                 alt="Дівчина дизайнує мобільний застосунок"
@@ -155,9 +209,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION 4 - Наша команда-->
-      <section class="section member-header">
+      <!-- <section class="section member-header">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list member-list">
@@ -181,8 +235,8 @@
                     >
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
-                  </a>
-                </li>
+                  </a> -->
+                <!-- </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
                     <svg
@@ -204,8 +258,8 @@
                       <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
-                </li>
-                <li class="social-list-item">
+                </li> -->
+                <!-- <li class="social-list-item">
                   <a href="" class="social-list-link">
                     <svg
                       lang="en"
@@ -226,8 +280,8 @@
                 alt="Молода усміхнена жінка-блондинка в окулярах"
                 width="270"
               />
-              <div class="container-text">
-                <h3 class="member-name">Ольга Рєпіна</h3>
+              <div class="container-text"> -->
+                <!-- <h3 class="member-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-position">Frontend Developer</p>
                 <ul class="social-list list">
                 <li class="social-list-item">
@@ -240,8 +294,8 @@
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
-                </li>
-                <li class="social-list-item">
+                </li> -->
+                <!-- <li class="social-list-item">
                   <a href="" class="social-list-link">
                     <svg
                       lang="en"
@@ -258,8 +312,8 @@
                       lang="en"
                       aria-label="facebook icon"
                       width="20" height="20"
-                    >
-                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    > -->
+                      <!-- <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -283,8 +337,8 @@
                 src="./images/team3.jpg"
                 alt="Молодий усміхнений чоловік у блакинтій сорочці"
                 width="270"
-              />
-              <div class="container-text">
+              /> -->
+              <!-- <div class="container-text">
                 <h3 class="member-name">Микола Тарасов</h3>
                 <p lang="en" class="team-position">Marketing</p>
                 <ul class="social-list list">
@@ -298,8 +352,8 @@
                              <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg>
                        </a>
-                     </li>
-                    <li class="social-list-item">
+                     </li> -->
+                    <!-- <li class="social-list-item">
                        <a href="" class="social-list-link">
                          <svg
                            lang="en"
@@ -320,8 +374,8 @@
                                   <use href="./images/sprite.svg#icon-facebook"></use>
                               </svg>
                            </a>
-                     </li>
-                     <li class="social-list-item">
+                     </li> -->
+                     <!-- <li class="social-list-item">
                          <a href="" class="social-list-link">
                              <svg
                                lang="en"
@@ -341,8 +395,8 @@
                 src="./images/team4.jpg"
                 alt="Молодий чоловік в окуляраз та чорній футболці"
                 width="270"
-              />
-              <div class="container-text">
+              /> -->
+              <!-- <div class="container-text">
                 <h3 class="member-name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-position">UI Designer</p>
                 <ul class="social-list list">
@@ -356,8 +410,8 @@
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
-                </li>
-                <li class="social-list-item">
+                </li> -->
+                <!-- <li class="social-list-item">
                   <a href="" class="social-list-link">
                     <svg
                       lang="en"
@@ -368,8 +422,8 @@
                     </svg>
                   </a>
                 </li>
-                <li class="social-list-item">
-                  <a href="" class="social-list-link">
+                <li class="social-list-item"> -->
+                  <!-- <a href="" class="social-list-link">
                     <svg
                       lang="en"
                       aria-label="facebook icon"
@@ -395,9 +449,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION 5 - Постійні клієнти-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="client-list list">
@@ -414,8 +468,8 @@
                   <use href="./images/sprite.svg#icon-company_tag"></use>
                 </svg>
               </a>
-            </li>
-            <li class="client-list-item">
+            </li> -->
+            <!-- <li class="client-list-item">
               <a href="" class="client-list-link">
                 <svg lang="en" aria-label="logo company" width="106" height="60">
                   <use href="./images/sprite.svg#icon-company"></use>
@@ -435,8 +489,8 @@
                   <use href="./images/sprite.svg#icon-brand"></use>
                 </svg>
               </a>
-            </li>
-            <li class="client-list-item">
+            </li> -->
+            <!-- <li class="client-list-item">
               <a href="" class="client-list-link">
                 <svg lang="en" aria-label="logo company tag line" width="106" height="60">
                   <use href="./images/sprite.svg#icon-tag_line"></use>
@@ -446,16 +500,16 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!--footer-->
-    <footer class="page-bottom">
+    <!-- <footer class="page-bottom">
       <div class="container bottom-box">
            <div class="footer-left">
                <a class="bottom-logo" href="./index.html">
                <span class="bottom-logo-part">Web</span>Studio
-               </a>
+               </a> -->
               <!--Контакти-->
-               <address>
+               <!-- <address>
                  <ul class="list">
                     <li class="retreat">
                        <a
@@ -475,8 +529,8 @@
                        info@devstudio.com
                        </a>
                    </li>
-                   <li class="retreat">
-                       <a
+                   <li class="retreat"> -->
+                       <!-- <a
                        class="bottom-phone-number bottom-link"
                        href="tel:+380961111111"
                        >
@@ -484,9 +538,9 @@
                        </a>
                    </li>
                  </ul>
-            </div>
+            </div> -->
                    <!--Соціальні мережі-->
-             <div class="join-container">
+             <!-- <div class="join-container">
                  <h3 class="join">Приєднуйтесь</h3>
                  <ul class="social-list list">
                      <li class="social-list-item">
@@ -509,8 +563,8 @@
                              >
                                <use href="./images/sprite.svg#icon-twitter"></use>
                            </svg>
-                           </a>
-                       </li>
+                           </a> -->
+                       <!-- </li>
                        <li class="social-list-item">
                            <a href="" class="social-list-link-join">
                            <svg
@@ -523,8 +577,8 @@
                            </a>
                        </li>
                        <li class="social-list-item">
-                           <a href="" class="social-list-link-join">
-                            <svg
+                           <a href="" class="social-list-link-join"> -->
+                            <!-- <svg
                                lang="en"
                                aria-label="linkedin icon"
                                width="20" height="20"
@@ -535,9 +589,9 @@
                         </li>
                   </ul>
              </div>
-          </address>
+          </address> -->
           <!--Підписка на розсилку-->
-          <div class="footer-mailing-box">
+          <!-- <div class="footer-mailing-box">
            <p class="footer-miling-title">Підпишіться на розсилку</p>
            <form class="footer-miling-form">
             <label class="footer-mailing">
@@ -558,9 +612,9 @@
            </form>
           </div>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="modal-close-icon" width="18" height="18">
@@ -632,8 +686,9 @@
                   <button type="submit" class="modal-form-submit">Відправити</button>
                 </form>
             </div>
-        </div>
+        </div> -->
         
-        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
