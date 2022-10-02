@@ -1,7 +1,8 @@
 .client-list {
   display: flex;
-  justify-content: center;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .client-list-link {
@@ -22,6 +23,24 @@
   }
 }
 
-.client-list-item {
-  flex-basis: calc((100% - 30px * 5) / 6);
+@media screen and (max-width: 767px) {
+  .client-list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    flex-wrap: nowrap;
+  }
+
+  .client-list-item {
+    flex-basis: calc((100% - 30px * 5) / 6);
+  }
 }

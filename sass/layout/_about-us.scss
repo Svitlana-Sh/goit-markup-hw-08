@@ -1,3 +1,12 @@
+.about {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
+
 .working-list {
     display: flex;
     gap: 30px;
@@ -29,4 +38,5 @@
     width: 100%;
     bottom: 0;
     left: 0;
+}
 }

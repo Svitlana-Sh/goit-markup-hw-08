@@ -6,17 +6,30 @@
 
 .bottom-box {
   display: flex;
-  align-items: baseline;
-  column-gap: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-miling-form {
+  display: block;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .retreat:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-miling-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-point {
@@ -49,11 +62,6 @@
   }
 }
 
-.join-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .join {
   font-family: $fontPrimary;
   font-weight: 700;
@@ -63,6 +71,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .social-list-link-join {
@@ -74,16 +83,13 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  margin-bottom: 60px;
   transition: background-color var(--transition-dur-and-func);
 
   &:hover,
   &:focus {
     background-color: var(--accent-color);
   }
-}
-
-.footer-mailing-box {
-  margin-left: auto;
 }
 
 .footer-miling-title {
@@ -94,11 +100,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-miling-form {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer-mailing-imput {
@@ -107,7 +116,8 @@
   background-color: #2f303a;
   color: #ffffff;
   cursor: text;
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
 
@@ -149,4 +159,65 @@
 .footer-mailing-buttom-icon {
   fill: #ffffff;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-mailing-box {
+    width: 100%;
+  }
+
+  .footer-mailing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-universal {
+    display: flex;
+    align-items: baseline;
+    gap: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-box {
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer-universal {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-left {
+    margin-bottom: 0;
+    text-align: start;
+    margin-right: 70px;
+  }
+
+  .join {
+    text-align: start;
+    align-items: baseline;
+  }
+
+  .footer-mailing-box {
+    margin-left: auto;
+  }
+
+  .footer-miling-form {
+    flex-direction: row;
+  }
+
+  .footer-mailing {
+    width: 358px;
+  }
+
+  .footer-miling-title {
+    text-align: start;
+  }
 }
