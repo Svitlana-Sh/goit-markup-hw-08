@@ -1057,7 +1057,7 @@ body {
   gap: 20px;
 }
 
-.footer-mailing-imput {
+.footer-mailing-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
@@ -1068,7 +1068,7 @@ body {
   height: 50px;
   padding-left: 16px;
 }
-.footer-mailing-imput::placeholder {
+.footer-mailing-input::placeholder {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
