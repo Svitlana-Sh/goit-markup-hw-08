@@ -4,12 +4,16 @@
 @import "./base/common";
 @import "./base/section";
 @import "./base/container";
+@import "./base/title";
 
 @import "./components/logo";
 @import "./components/backdrop";
 @import "./components/modal-btn";
 @import "./components/modal-form";
+@import "./components/modal-check";
+@import "./components/modal-submit";
 @import "./components/modal-window";
+@import "./components/modal-close-btn";
 @import "./components/mobile-menu";
 
 @import "./layout/page-header";
